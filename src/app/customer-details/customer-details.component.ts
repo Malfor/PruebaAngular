@@ -12,11 +12,13 @@ enableProdMode();
 })
 export class CustomerDetailsComponent implements OnInit {
 
+  @Input() customer: Customer;
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  @Input() customer: Customer;
+  
 
 }
